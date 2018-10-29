@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore|Open+Sans");
+
 :root {
     --brightYellow: #E38505;
     --darkBrown: #BB9457;
@@ -43,6 +44,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 4rem;
     }
+
     .grid-container {
         max-width: 75vw;
     }
@@ -98,6 +100,7 @@ body {
 .header {
     height: 100vh;
     display: grid;
+    grid-template-columns: 80%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -178,7 +181,7 @@ body {
 
 .video-item {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -206,9 +209,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.5);
     }
+
     100% {
         transform: scale(1);
     }
@@ -280,6 +285,7 @@ body {
         z-index: 3;
         cursor: pointer;
     }
+
     .video-switch {
         position: relative;
         width: 5rem;
@@ -290,6 +296,7 @@ body {
         padding: 0.25rem;
         border-radius: 0.5rem;
     }
+
     .video-switch-btn {
         position: absolute;
         top: 0;
@@ -300,6 +307,7 @@ body {
         border-radius: 0.5rem;
         transition: all 0.3s ease-out;
     }
+
     .btn-slide {
         left: 50%;
     }
@@ -319,6 +327,7 @@ body {
 .about-img-item {
     width: 100%;
     display: block;
+
     /* min-height: 100%; */
     border-radius: 0.25rem;
 }
@@ -327,6 +336,7 @@ body {
     .about-img-special {
         order: -1;
     }
+
     .about-container {
         grid-template-rows: 1fr 1fr;
     }
@@ -507,36 +517,46 @@ body {
     .work-item-img {
         height: 100%;
     }
+
     .work-container {
         height: 100vh;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4 1fr);
         grid-template-areas: "one one two three" "one one four three" "five six seven seven" "eight nine seven seven";
     }
+
     .item-1 {
         grid-area: one;
     }
+
     .item-2 {
         grid-area: two;
     }
+
     .item-3 {
         grid-area: three;
     }
+
     .item-4 {
         grid-area: four;
     }
+
     .item-5 {
         grid-area: five;
     }
+
     .item-6 {
         grid-area: six;
     }
+
     .item-7 {
         grid-area: seven;
     }
+
     .item-8 {
         grid-area: eight;
     }
+
     .item-9 {
         grid-area: nine;
     }
@@ -646,11 +666,13 @@ body {
         grid-template-columns: 1fr;
         order: 0;
     }
+
     .contact-container {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-column-gap: 2rem;
     }
+
     .contact-map {
         align-self: center;
     }
